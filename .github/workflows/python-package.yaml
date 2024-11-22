@@ -1,0 +1,12 @@
+name : My workflow
+run-names: ${{github.actor }} is testing out Github Actions
+on: {push}
+
+jobs:
+  runs-on: [ubuntu-latest]
+  steps:
+    - name: Set up python 3.9
+      uses: actions/setup-python@v2
+      with:
+      python version: 3.9
+
